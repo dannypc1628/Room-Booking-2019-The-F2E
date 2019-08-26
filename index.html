@@ -11,32 +11,71 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="./js/vue.js"></script>
+    
     <script src="./js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
-      <div id="page" class="container ">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                  <a class="navbar-brand " href="#">:OR</a>
+      <div id="page" class="container-fluid ">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white  ">
+                  <a class="font-weight-bold h3" href="#">:OR</a>
                   
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="mr-auto"></div>
-                        <div class="navbar-nav">
-                          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                          <a class="nav-item nav-link" href="#">ROOMS</a>
-                          <a class="nav-item nav-link" href="#">FACILITES</a>
-                          <a class="nav-item nav-link" href="#">NEWS</a>
-                          <a class="nav-item nav-link" href="#">ABOUT US</a>
+                        <div class="navbar-nav ">
+                          <a class="nav-item nav-link active h4 font-weight-bold m-3" href="#">Home <span class="sr-only">(current)</span></a>
+                          <a class="nav-item nav-link h4 font-weight-bold m-3" href="#">ROOMS</a>
+                          <a class="nav-item nav-link h4 font-weight-bold m-3" href="#">FACILITES</a>
+                          <a class="nav-item nav-link h4 font-weight-bold m-3" href="#">NEWS</a>
+                          <a class="nav-item nav-link h4 font-weight-bold m-3" href="#">ABOUT US</a>
                           
-                          <div class="d-flex align-content-end">
-                              <div class="mt-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                          <div class="d-flex align-content-end ml-3 mr-3">
+                              <div class="align-self-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
                               </div>
                         </div>
                         </div>
                       </div>
-                </nav>
-            
-            <div class="">
+             </nav>
+            <div class="row">
+                  <div class="col-11 ">
+                        <div  id="bigImg" :style="{backgroundImage: 'url('+bigImgSrc+')' }" ></div>
+                        <!-- <div id="bigImg"></div> -->
+                   </div>
+                   <div class="col-1 row flex-column justify-content-end">
+                         <a href="" class="shareText text-muted">Facebook</a>
+                         <a href="" class="shareText text-muted">Instagram</a>
+                         <a href="" class="shareText text-muted">Twitter</a>
+                   </div>
+            </div>
+             <div class="row m-4 justify-content-around">
+                   <div class="col-md-4 col-xs-6 row justify-content-center">
+                         <div class="col-2 m-2">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M12 2C8.13 2 5 5.13 5 9c0 4.17 4.42 9.92 6.24 12.11.4.48 1.13.48 1.53 0C14.58 18.92 19 13.17 19 9c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                         </div>
+                         <div class="col-12 m-2 text-center ">UPCOMING NEIGHBORHOODS</div>
+                         <div class="col-12 m-2 text-center text-black-50">Tourist Attractions, Industrial Park, College, Hospital, Airport, Major,Cross Road For Through Traffic, Etc</div>
+                   </div>
+                   <div class="col-md-4 col-xs-6 row justify-content-center">
+                              <div class="col-2 m-2">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M12 2c-4 0-8 .5-8 4v9.5C4 17.43 5.57 19 7.5 19l-1.15 1.15c-.31.31-.09.85.36.85H7.8c.13 0 .26-.05.35-.15L10 19h4l1.85 1.85c.09.09.22.15.35.15h1.09c.45 0 .67-.54.35-.85L16.5 19c1.93 0 3.5-1.57 3.5-3.5V6c0-3.5-4-4-8-4zM7.5 17c-.83 0-1.5-.67-1.5-1.5S6.67 14 7.5 14s1.5.67 1.5 1.5S8.33 17 7.5 17zm3.5-7H6V6h5v4zm5.5 7c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm1.5-7h-5V6h5v4z"/></svg>
+                                     </div>
+                              <div class="col-12 m-2 text-center ">TRANSPORTATION CONNECTIVITY</div>
+                              <div class="col-12 m-2 text-center text-black-50">Roads, Taxi, Metro, Subway, Buses, Trains, Walking, Bicycle Paths, Etc</div>
+                         </div>
+             </div>
+             <div class="row mt-3 ml-5 mr-5">
+                   <div class="col-8 h4 font-weight-bold mb-0">ENJOY YOUR STAY</div>
+                  <div class="col-8 text-muted">PERFECT PLACE FOR HOLIDAY</div>
+            </div>
+             <div  class="row m-5" >
+                  <div class="itemBox col-4 mb-3" v-for="item in items"> 
+                        <div class="imgBox" :style="{backgroundImage : 'url('+item.imageUrl+')'}"></div>
+                        <div class="row">
+                                    <div class="font-weight-bold col-8">{{item.name}}</div><div class="text-black-50 col-4">MORE ></div>
+                        </div>
+                  </div>
+             </div>
+            <div class="row m-4 justify-content-center">
                   你好，我是<a href="https://challenge.thef2e.com/user/2454">長庚</a>，這是六角學院2019前端&UI修練精神時光屋活動，第六週前端投稿作品，採用的設計稿是<a href="https://challenge.thef2e.com/user/1991?schedule=3969#works-3969">UI設計師 Jessy Fan 的作品</a>
             </div>
       

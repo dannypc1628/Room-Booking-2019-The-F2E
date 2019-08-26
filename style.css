@@ -1,125 +1,45 @@
-.my-head{
-    /* border-radius:  0  0 50% 50%/ 0 0 50px 50px; */
-    /* width: 1500px;
-    max-width: 1000px;
-    height: 200px;*/
-    overflow: hidden; 
-    
+
+@font-face {
+    font-family: 'Hind';
+    src: url('./font/Hind-Medium.ttf') format('truetype');
 }
 #page{
-    /* width: 576px; */
-    font-family:"Microsoft JhengHei";
-}
-.my-title-bar-bg{
-    border-radius:  0  0 50% 50%/ 0 0 50% 50%;
-    width: 200%;
-    left:-50%;
-    height: 200px;
-    position: relative;
-    background: -webkit-linear-gradient(top,#3725AF,#8244BB);
-    background: -o-linear-gradient(bottom ,#3725AF,#8244BB);
-    background: -moz-linear-gradient(bottom ,#3725AF,#8244BB);
-    background: linear-gradient(to bottom ,#3725AF,#8244BB);
-    
-}
-.my-button{
-    background: #8244BB;
-    border-radius:  30px;
-    border: 3px solid #8244BB ;
-    
-}
-.my-button:hover{
-    border: 3px solid rgb(152, 213, 253) ;
-    box-shadow: 0 0 10px  rgb(152, 213, 253);
-    
-}
-.my-button-none{
-    background: #C7A4D0;
-    border: 3px solid #C7A4D0 ;
-    border-radius:  30px;
-}
-.my-tag{
-    border-radius:  10px;
-    border: 2px solid rgb(238, 238, 238);
-}
-.my-tag:hover{
-    box-shadow: 0 0 10px  rgb(152, 213, 253);
-}
-.my-cycle{
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    border: 2px solid white;
-    padding: 3px;
-    margin: 3px;
-}
-input{
-    background: rgb(236, 236, 236);
-    border-radius:  30px;
-    border: 1px solid rgb(216, 216, 216);
-}
-.this-status{
-    background: white;
-    color: #3725AF !important;
-}
-.this-pay-mode{
-    border: 3px solid rgb(152, 213, 253) !important;
-    box-shadow: 0 0 15px  rgb(152, 213, 253);
-}
-.my-body{
-    height: 400px;
-}
-.my-foot{
-
-}
-#game-start{
-    height:1000px;
-    width: 1600px; 
-
-    background-image: url(./img/startpage_bg.jpg);
-    background-position: center;
-    background-size: contain;
-    background-repeat:no-repeat;
-}
-#start-bar{
-    width: 100%;
-    max-width: 1600px; 
-    height: 25%;
-    background-color: #2C2B50;
-    background-position: center;
-    background-size: contain;
-    position:absolute;
-    margin:0px auto;
-    z-index: 1 ;
-}
-#start-button{
-    width: 300px;
-    height: 100px; 
-    background-color: #FF6F72;
-    border-radius: 12% /50%;
-    color: white;
-    line-height: 1.5;
-    font-size: 4rem;
-    margin-top:240%;
-    z-index: 10;
-    position: relative;
-}
-#how-to-play{
-    color: #9E99FF;
-    font-size: 2rem;
-}
-#game-play{
-    height:1000px;
-    width: 1600px; 
-    background-color: #2C2B50;
-}
-.freecell-top-bar{
-    background: -webkit-linear-gradient(left,#5D7FD9,#8957ED);
-    background: -o-linear-gradient(right,#5D7FD9,#8957ED);
-    background: -moz-linear-gradient(right,#5D7FD9,#8957ED);
-    background: linear-gradient(to right,#5D7FD9,#8957ED);
+    font-family: 'Hind'; 
 }
 body{
     display:flex;
-   justify-content: center; 
+   justify-content: center;
+   
 }
+.ImgDiv{
+    overflow: hidden;
+    width: 960px;
+    height: 640px;
+}
+#bigImg{
+    /* background-image: url("https://images.unsplash.com/photo-1564182379166-8fcfdda80151?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80"); */
+    height: 500px;
+    background-position: bottom; 
+    /* background-size: contain; */
+    background-repeat:no-repeat; 
+}
+.itemBox{
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+}
+.imgBox{
+    height: 370px;
+    width: 370px;
+    background-position: bottom; 
+    background-size: cover;
+    background-repeat:no-repeat; 
+}
+.shareText{
+    margin: 0 auto;  
+    height: 120px;  
+    writing-mode: vertical-lr; 
+    writing-mode: tb-lr;
+    font-size: 20px
+}
+
